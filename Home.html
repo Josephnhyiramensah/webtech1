@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Joseph.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Omega Webpage</title>
+</head>
+<body>
+    <div class="nav-bar">
+      <div class="name" style="padding-left: 65%; "><h1>NHYIRA MENSAH JOSEPH@0721000196</h1></div>
+        <ul> 
+            <li><a href="Home.html" class="active">HOME</a></li> 
+            <li><a href="About Me.html">ABOUT</a></li>
+            <li><a href="Reference Page.html">REFERENCE</a></li> 
+            <li><a href="Gallary.html">Gallary</a></li>
+            <li><a href="Document  Page.html">DOCUMENT</a></li> 
+            <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+      <div class="slider">
+        <img src="picture/At attachment (2).jpg" alt="Slide 1">
+        <img src="picture/IMG_20220816_075444_452.jpg" alt="Slide 2">
+        <img src="picture/joemensah.jpg" alt="Slide 3">
+      </div>
+  
+      <!-- <div class="slider-controls">
+        <button class="active"></button>
+        <!-- <button></button>
+        <button></button>
+     --> -->
+      <div class="buttons">
+        <script>
+  
+          const slides = document.querySelectorAll('.slider img');
+          const controls = document.querySelectorAll('.slider-controls button');
+          let currentSlide = 0;
+          
+          function showSlide(index) {
+            slides.forEach(slide => {
+              slide.style.display = 'none';
+            });
+            controls.forEach(control => {
+              control.classList.remove('active');
+            });
+          
+            slides[index].style.display = 'block';
+            controls[index].classList.add('active');
+          }
+          
+          controls.forEach((control, index) => {
+            control.addEventListener('click', () => {
+              currentSlide = index;
+              showSlide(currentSlide);
+            });
+          });
+          
+          setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+          }, 3000);
+          </script>
+    
+    
+<div class="home">
+  
+    <div class="introduct">
+      <h1><u>About Me</u></h1>
+      <div class="about1st">
+      <p>
+      My name is Joseph Nhyira Mensah, and I proudly hail from the vibrant town of Agona Swedru in the Central Region of Ghana.</br> At the age of 23, I have embarked on a remarkable journey filled with passion, innovation, and a thirst for knowledge.  </br>
+    </p>  
+    </div>
+  <div>
+    <p><a href="About Me.html">READ MORE</a></p>
+  </div>
+     </div>
+     
+      <div class="picture/JOE to edit .jpg">
+        <img src="" alt="Image 1">
+        <img src="" alt="Image 2">
+        <img src="" alt="Image 3">
+        <img src="picture/IMG_20221219_092433_089.jpg" alt="Image 4">
+        <img src="picture/JOE to edit .jpg" alt="Image 5">
+        <style>
+         /* .image-gallery {
+   width: 300px; 
+  height: 200px; 
+  perspective: 1000px; 
+  margin: 0 auto;
+  position: relative;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.image-gallery img:nth-child(1) {
+  animation: galleryAnimation 10s linear infinite;
+}
+
+@keyframes galleryAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  10% {
+    transform: rotateY(180deg);
+  }
+  20% {
+    transform: rotateY(180deg);
+  }
+  30% {
+    transform: rotateY(360deg);
+  }
+  40% {
+    transform: rotateY(360deg);
+  }
+  50% {
+    transform: rotateY(540deg);
+  }
+  60% {
+    transform: rotateY(540deg);
+  }
+  70% {
+    transform: rotateY(720deg);
+  }
+  80% {
+    transform: rotateY(720deg);
+  }
+  90% {
+    transform: rotateY(900deg);
+  }
+  100% {
+    transform: rotateY(900deg);
+  }
+}
+.image-gallery {
+  width: 300px; 
+  height: 200px; 
+  perspective: 1000px; 
+  margin: 0 auto;
+  position: relative;
+  transform-style: preserve-3d;
+} */
+.image-gallery {
+  width: 300px; /* Adjust the width according to your needs */
+  height: 200px; /* Adjust the height according to your needs */
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px; /* Perspective for 3D transform */
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 1s;
+}
+
+.image-gallery img:nth-child(1) {
+  animation: galleryAnimation 15s linear infinite;
+}
+
+@keyframes galleryAnimation {
+  0%, 20% {
+    transform: rotateY(0deg);
+  }
+  25%, 45% {
+    transform: rotateY(-180deg);
+  }
+  50%, 70% {
+    transform: rotateY(-360deg);
+  }
+  75%, 95% {
+    transform: rotateY(-540deg);
+  }
+  100% {
+    transform: rotateY(-720deg);
+  }
+}
+        </style>
+      </div>
+    
+    <div class="sub-intro">
+    <h1> <u>Courses offering</u></h1>
+    </div>
+
+    <div class="courses">
+        <div class="first">
+          <img src="picture/hardware 3.webp" alt="">
+          
+          <p><b>Hardware</b></p>
+          <p>Lecturer: Dr. Michael Omari</p>
+          <h3>What is computer hardware?</h3>
+          <p> simple definition of computer hardware is “any physical parts or components that contribute to a computer system.” There are several different kinds of hardware inside a PC. Both desktop and laptop PCs include these types of hardware, though the size and type differ because of a laptop’s compact design.
+         
+          
+        </div>
+
+        <div class="second">
+          <img src="picture/software-engineering-featured.jpg" alt="">
+          <p><b>SOFTWARE ENGIEERING</b></p>
+          <p>Lecturer:Dr. Hellary Arkah </p>
+          <p>Software is a program or set of programs containing instructions that provide desired functionality. </br> And Engineering is the process of designing and building something that serves a particular purpose and finds a cost-effective solution to problems. 
+            Software engineering is the process of designing, developing, testing, and maintaining software. It is a systematic and disciplined approach to software development that aims to create high-quality, reliable, and maintainable software. 
+          </p><p>
+            Some key principles of software engineering include:
+            Modularity.
+            Abstraction.
+            Encapsulation.
+            Reusability.
+            Maintenance.
+          </p>
+        </div>
+
+        <div class="third">
+          <img src="picture/networking.jfif" alt="">
+          <p><b>NETWORKING </b></p>
+          <p>Lecturer:Prof. Frank Amoani Arthur</p>
+          <p>Computer Network is a group of computers connected with each other through wires, optical fibres or optical links so that various devices can interact with each other through a network.
+            The aim of the computer network is the sharing of resources among various devices.
+            In the case of computer network technology, there are several types of networks that vary from simple to complex level. ullam, voluptates consectetur.</p>
+          <p style=" height: 2px;  color: gray;  text-align: center;"> <a href="https://www.javatpoint.com/computer-network-introduction">READ MORE</a></p>
+        </div>
+        
+        <div class="fourth">
+          <img src="picture/bigstock-ACCOUNTING-inscription-coming-324977827.jpg" alt="">
+          <p><b>ACCOUNTING</b></p>
+          <p>Lecturer: Dr Bismark Abadu</p>
+          <p>Definition of Accounting
+            Accounting can be defined as a process of reporting, recording, interpreting and summarising economic data. The introduction of accounting helps the decision-makers of a company to make effective choices, by providing information on the financial status of the business..<p style=" height: 0;  color: gray;  text-align: center;"> <a href="https://ncert.nic.in/textbook/pdf/keac101.pdf">READ MORE</a></p></p>
+        
+        </div>
+        <div class="fourth">
+          <img src="picture/images.jfif" alt="">
+          <p><b>COMPUTER PROGRAMMING</b></p>
+          <p>Lecturer:Abeku French</p>
+          <p>Computer programming is the process of designing, writing, and maintaining sets of instructions that a computer can follow to perform specific tasks. It involves creating programs using programming languages that computers can understand and execute. These programs can range from simple scripts to complex software applications..</p>
+         <p><a href="https://www.w3schools.com/c/c_intro.php">Learn programming</a></p> 
+        </div>
+        
+<!-- <div class="fifth">
+<img src="" alt="">
+</div> -->
+      </div>
+      
+      <div class="">
+        <h1><u>Semester Calendar</u></h1>
+      </div>
+        <div class="calender">
+          
+          <div class="calender-details">
+            <p><b>3rd July, 2023</b></p>
+            <p>Mid-Semester exam</p>
+            </div>
+
+          <div class="calender-details">
+            <p><b>9th July, 2023</b></p>
+            <p>end of Mid-Semester exam</p>
+          </div>
+
+          <div class="calender-details">
+            <p><b>13th August, 2023</b></p>
+            <p>end of semester exam </p>
+          </div>
+
+          <div class="calender-details">
+            <p><b>27th August, 2023</b></p>
+            <p>end of semester exam</p>
+          </div>
+          
+          <div class="calender-details">
+            <p><b>11th September, 2023</b></p>
+            <p>industrial attactment</p>
+          </div>
+
+          <div class="calender-details">
+            <p><b>5th january, 2024</b></p>
+            <p>new Academic Year</p>
+          </div>
+
+        </div>
+
+        <div class="">
+            <h1><U>testimonial</U></h1>
+          </div>
+          <div class="maincontainer">
+            <div class="thecard">
+              <div class="thefront "> General Behavior: Joseph is an absolute joy to be around! His friendly and positive demeanor brightens up any room he enters. He is always approachable, and his genuine kindness creates a welcoming atmosphere for everyone. Joseph's patience and understanding make him an exceptional listener and a reliable friend. His willingness to help others is commendable, and his warm personality leaves a lasting impression on those he interacts with.  <b style="color: gray;">CLICK TO READ MORE</b></div>
+                <div class="theback">Working Place: Joseph is a true asset to any working environment. He is diligent, focused, and incredibly dedicated to his tasks. His attention to detail ensures that he consistently produces high-quality work. Not only is he efficient and reliable, but Joseph also fosters a collaborative atmosphere, making him an excellent team player. He is always willing to go the extra mile to support his colleagues and ensure the success of the projects he's involved in.
+            
+                </div>
+            
+            </div>
+              </div>
+              <style>
+                .maincontainer{
+            
+                  position: relative;
+                  height: 200px;
+                  width: 400px;
+                  background-color: darkgrey;
+                }
+                .thecard:hover{
+                   transform: rotateY(180deg); 
+                  
+                }
+                .thecard{
+                  position :absolute;
+                  height: 90%;
+                  width: 90%;
+                  transform-style: preserve-3d;
+                  transition: all 0.5s ease;
+                  background-color: lightblue;
+                }
+                .thefront {
+                  position:absolute;
+                  width: 100%;
+                  height: 100%;
+            
+            backface-visibility: hidden;
+            background-color: wheat
+            color(wheat)
+                }
+               .theback{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                color: black;
+                 transform: rotateY(180deg); 
+              
+               }
+              </style>
+      
+              <div class="testimony">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ratione ea numquam dignissimos, doloribus quaerat possimus magni quo accusamus sequi voluptate officiis quibusdam dolore in necessitatibus hic nam ducimus cupiditate!</p>
+              </div>
+
+              <div class="maincontainer">
+                <div class="thecard">
+                  <div class="thefront "> Mood of Relationship: Building relationships with Joseph is effortless, as he effortlessly bridges gaps and connects with people on a deeper level. His positive attitude and openness make him approachable, creating a friendly and harmonious atmosphere wherever he goes. Joseph's ability to empathize with others allows him to establish meaningful connections, making him a valued friend and colleague. He has an uncanny knack for lifting the spirits of those around him and bringing out the best in people.  <b style="color: gray;">CLICK TO READ MORE</b></div>
+                    <div class="theback">In conclusion, Joseph is an exceptional individual whose general behavior, work ethic, and mood of relationship make him a pleasure to be around. He is an outstanding team player, a caring friend, and a true professional. Any organization or group is lucky to have him, and I can wholeheartedly recommend Joseph for any endeavor he pursues.
+                    </div>
+                
+                </div>
+                  </div>
+                  <style>
+                    .maincontainer{
+                
+                      position: relative;
+                      height: 200px;
+                      width: 400px;
+                      background-color: darkgrey;
+                      margin-right: 20px;
+                    }
+                    .thecard:hover{
+                       transform: rotateY(180deg); 
+                      
+                    }
+                    .thecard{
+                      position :absolute;
+                      height: 95%;
+                      width: 95%;
+
+                      transform-style: preserve-3d;
+                      transition: all 0.5s ease;
+                      background-color: lightblue;
+                    }
+                    .thefront {
+                      position:absolute;
+                      width: 100%;
+                      height: 100%;
+
+                
+                backface-visibility: hidden;
+                background-color: wheat
+                color(wheat)
+                    }
+                   .theback{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    color: deep gray;
+                     transform: rotateY(180deg); 
+                  
+                   }
+                  </style>>
+
+            </div>    
+    </div>
+      
+    </div>
+
+   
+   
+
+
+
+<footer class="footer-section">
+    <div class="social-icons">
+    <a href="https://wa.me"><i class=" https://wa.me/0548211310"> <img src="picture/download.png" ></i></a>
+    <a href="https://www.facebook.com/JOSEPH NHYIRA MENSAH"><img src="picture/FB.jpg" alt=""></a>
+    <a href="mailto:josephnhyiramensah.gmail.com"><img src="picture/Email.png" alt=""></a>
+    <p>For Enquires Follow Us On:</p>
+    </div>
+  
+    <p class="copyright">
+      
+      Copyright &copy; 2023 <span class="me">JOSEPH NHYIRA MENSAH</span>
+      </p>
+    </footer>
+  
+</html>
+
