@@ -484,3 +484,9 @@ display: block;
    background:cyan;
    }
    }
+
+   .joe{
+    padding: 20px;
+    text-align: justify;
+    word-spacing: 5px;
+   }
